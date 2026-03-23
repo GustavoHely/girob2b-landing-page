@@ -15,98 +15,90 @@ const Header = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-
     setIsMobileMenuOpen(false);
   };
 
   return (
-    <>
-      <button
-        type="button"
-        onClick={() => setIsMobileMenuOpen(true)}
-        className={`${styles.mobileMenuButton} ${isMobileMenuOpen ? 'opacity-0 pointer-events-none' : ''}`}
-        aria-label="Abrir menu lateral"
-        aria-expanded={isMobileMenuOpen}
-      >
-        <span className="text-xl leading-none">≡</span>
-        Menu
-      </button>
-
-      {isMobileMenuOpen && (
-        <button
-          type="button"
-          className={styles.mobileMenuBackdrop}
-          onClick={() => setIsMobileMenuOpen(false)}
-          aria-label="Fechar menu lateral"
-        />
-      )}
-
-      <aside className={`${styles.sidebar} ${isMobileMenuOpen ? styles.sidebarOpen : ''}`}>
-        <Link to="/" className={styles.sidebarBrand} onClick={() => setIsMobileMenuOpen(false)}>
+    <header className={styles.navbar}>
+      <div className={`${styles.container} ${styles.navbarInner}`}>
+        <Link to="/" className={styles.navBrand} onClick={() => setIsMobileMenuOpen(false)}>
           <img
             src="/giro-b2b-logo-light.svg"
             alt="Giro B2B"
-            className="w-12 h-12 rounded-lg bg-white object-contain p-0.5 shrink-0"
+            className="w-9 h-9 rounded bg-white object-contain p-0.5 shrink-0"
           />
-          <div className="leading-tight">
-            <div className="text-xl font-black tracking-tight text-white">Giro B2B</div>
-            <div className="text-[11px] uppercase tracking-[0.2em] text-slate-400">SaaS B2B Connector</div>
+          <div className="text-lg font-black tracking-tight text-white leading-none">
+            Giro <span className="text-brand-accent">B2B</span>
           </div>
         </Link>
 
-        <nav className={styles.sidebarNav}>
-          <a
-            href="/#features"
-            onClick={(e) => scrollToSection(e, 'features')}
-            className={styles.sidebarNavLink}
-          >
+        <nav className={styles.navLinks}>
+          <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className={styles.navLink}>
             Funcionalidades
           </a>
-          <a
-            href="/#pricing"
-            onClick={(e) => scrollToSection(e, 'pricing')}
-            className={styles.sidebarNavLink}
-          >
+          <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className={styles.navLink}>
             Investimento
           </a>
           <Link
             to="/about"
-            className={`${styles.sidebarNavLink} ${pathname === '/about' ? styles.sidebarNavLinkActive : ''}`}
-            onClick={() => setIsMobileMenuOpen(false)}
+            className={`${styles.navLink} ${pathname === '/about' ? styles.navLinkActive : ''}`}
           >
             Sobre
           </Link>
-          <a
-            href="/#contact"
-            onClick={(e) => scrollToSection(e, 'contact')}
-            className={styles.sidebarNavLink}
-          >
+          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navLink}>
             Contato
           </a>
         </nav>
 
-        <div className={styles.sidebarCtaGroup}>
-          <a
-            href="/#contact"
-            onClick={(e) => scrollToSection(e, 'contact')}
-            className={styles.sidebarCta}
-          >
-            Seja um Parceiro
+        <div className={styles.navCtas}>
+          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCtaSecondary}>
+            Entre em Contato
           </a>
-          <a
-            href="/#contact"
-            onClick={(e) => scrollToSection(e, 'contact')}
-            className={styles.sidebarCtaSecondary}
-          >
-            Entre em contato
+          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCta}>
+            Seja um Parceiro
           </a>
         </div>
 
-        <div className={styles.sidebarFooter}>
-          <p>Conecte compradores e fornecedores em um único ecossistema.</p>
+        <button
+          type="button"
+          className={styles.hamburger}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isMobileMenuOpen}
+        >
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLine1Open : ''}`} />
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLine2Open : ''}`} />
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLine3Open : ''}`} />
+        </button>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div className={styles.mobileMenu}>
+          <nav className={styles.mobileNav}>
+            <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className={styles.mobileNavLink}>
+              Funcionalidades
+            </a>
+            <a href="/#pricing" onClick={(e) => scrollToSection(e, 'pricing')} className={styles.mobileNavLink}>
+              Investimento
+            </a>
+            <Link to="/about" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
+              Sobre
+            </Link>
+            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.mobileNavLink}>
+              Contato
+            </a>
+          </nav>
+          <div className={styles.mobileCtas}>
+            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCtaSecondary}>
+              Entre em Contato
+            </a>
+            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCta}>
+              Seja um Parceiro
+            </a>
+          </div>
         </div>
-      </aside>
-    </>
+      )}
+    </header>
   );
 };
 

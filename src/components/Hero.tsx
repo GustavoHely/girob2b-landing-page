@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid xl:grid-cols-2 gap-12 items-center">
           <div className="text-left z-10">
             <h1 className="text-4xl md:text-5xl font-black text-white leading-[1.1] mb-8">
               Simplifique suas compras e acelere seus resultados com o Giro B2B.
@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
+          <div className="relative hidden xl:block">
             <div className="absolute -top-20 -right-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl"></div>
             <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-4 shadow-2xl rotate-3">
               <div className={`bg-slate-900 rounded-2xl overflow-hidden aspect-video flex items-center justify-center ${styles.handshakeScene}`}>
@@ -59,7 +59,7 @@ const Hero = () => {
               </div>
             </div>
             {/* Floating elements */}
-            <div className="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-2xl animate-bounce">
+            <div className="absolute -bottom-6 right-0 bg-white p-6 rounded-2xl shadow-2xl animate-bounce">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                   <span className="text-green-600 font-bold">↑</span>

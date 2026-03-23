@@ -2,7 +2,7 @@ import styles from '../styles/LandingPage.module.css';
 
 const About = () => {
   return (
-    <div className="bg-slate-950 min-h-screen pt-32 pb-20">
+    <div className="bg-slate-950 min-h-screen pt-24 pb-20">
       <div className={styles.container}>
         {/* Header Section */}
         <div className="text-center mb-24">
