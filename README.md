@@ -39,7 +39,8 @@ Este é o projeto da Landing Page para a plataforma SaaS B2B, desenvolvido com *
    O terminal informará a URL (geralmente `http://localhost:5173`).
 
 ## Estrutura do Projeto
-- `src/components/`: Componentes React (Header, Hero, Features, Pricing, Footer).
+- `src/components/`: Componentes React reutilizáveis (Header, Hero, Features, HowItWorks, Footer).
+- `src/pages/`: Páginas roteadas da landing (`/`, `/como-funciona`, `/funcionalidades`, `/about`, `/contato`).
 - `src/styles/`: CSS Modules para estilização específica.
 - `src/App.tsx`: Ponto de entrada da aplicação.
 - `src/index.css`: Configurações globais do Tailwind.
