@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../styles/LandingPage.module.css';
 
 const steps = [
@@ -54,17 +55,17 @@ const valuePillars = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="relative overflow-hidden bg-slate-950 py-20 md:py-24 xl:py-28">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+    <section id="how-it-works" className="relative overflow-hidden bg-white py-20 md:py-24 xl:py-28">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-200 to-transparent" />
       <div className="absolute -top-24 right-[-6rem] h-56 w-56 rounded-full bg-brand-accent/10 blur-3xl md:h-72 md:w-72" />
 
       <div className={styles.container}>
         <div className="max-w-3xl">
           <h2 className="text-brand-accent font-bold uppercase tracking-[0.3em] text-sm mb-4">Como funciona</h2>
-          <h3 className="mb-5 text-3xl font-black text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+          <h3 className="mb-5 text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl xl:text-6xl">
             Uma jornada única para pesquisar, vender e negociar no B2B.
           </h3>
-          <p className="text-base leading-relaxed text-slate-200 md:text-lg">
+          <p className="text-base leading-relaxed text-slate-700 md:text-lg">
             Em vez de operar compras e vendas em canais separados, o Giro B2B organiza a jornada em um ambiente
             único. Isso reduz ruído, melhora o contexto das negociações e dá mais consistência para transformar
             catálogo em relacionamento comercial real.
@@ -78,53 +79,53 @@ const HowItWorks = () => {
                 <div className="inline-flex rounded-full border border-brand-accent/30 bg-brand-accent/10 px-4 py-2 text-xs font-black tracking-[0.25em] text-brand-accent">
                   {step.step}
                 </div>
-                <h4 className="mt-5 text-xl font-bold leading-tight text-white lg:text-[1.35rem]">{step.title}</h4>
-                <p className="mt-3 text-sm leading-relaxed text-slate-300 md:text-[0.95rem]">{step.description}</p>
+                <h4 className="mt-5 text-xl font-bold leading-tight text-slate-950 lg:text-[1.35rem]">{step.title}</h4>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-[0.95rem]">{step.description}</p>
               </article>
             ))}
           </div>
 
-          <aside className="rounded-[1.5rem] border border-brand-accent/20 bg-white/[0.03] p-5 shadow-[0_30px_80px_rgba(18,199,104,0.08)] backdrop-blur sm:p-6 lg:p-7">
-            <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-200">
+          <aside className="rounded-[1.5rem] border border-emerald-100 bg-[#f4fbf6] p-5 shadow-[0_30px_80px_rgba(18,61,43,0.08)] sm:p-6 lg:p-7">
+            <div className="inline-flex rounded-full border border-emerald-100 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-slate-600">
               O que entra no fluxo
             </div>
-            <h4 className="mt-5 text-2xl font-black leading-tight text-white sm:text-3xl">
+            <h4 className="mt-5 text-2xl font-black leading-tight text-slate-950 sm:text-3xl">
               Menos improviso operacional, mais clareza comercial.
             </h4>
-            <p className="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               A plataforma junta os blocos que normalmente ficam espalhados entre planilhas, catálogos soltos,
               conversas e múltiplos canais.
             </p>
 
             <ul className="mt-6 space-y-3 md:mt-8">
               {flowHighlights.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-white">
+                <li key={item} className="flex items-start gap-3 text-sm text-slate-800">
                   <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-accent/15 text-brand-accent">
                     <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
-                  <span className="leading-relaxed text-slate-100">{item}</span>
+                  <span className="leading-relaxed text-slate-700">{item}</span>
                 </li>
               ))}
             </ul>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 md:mt-8">
-              <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Compra</div>
-                <div className="mt-2 text-lg font-black text-white md:text-xl">Pesquisa com contexto</div>
+              <div className="rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Compra</div>
+                <div className="mt-2 text-lg font-black text-slate-950 md:text-xl">Pesquisa com contexto</div>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Venda</div>
-                <div className="mt-2 text-lg font-black text-white md:text-xl">Catálogo mais ativo</div>
+              <div className="rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Venda</div>
+                <div className="mt-2 text-lg font-black text-slate-950 md:text-xl">Catálogo mais ativo</div>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Negociação</div>
-                <div className="mt-2 text-lg font-black text-white md:text-xl">Histórico centralizado</div>
+              <div className="rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Negociação</div>
+                <div className="mt-2 text-lg font-black text-slate-950 md:text-xl">Histórico centralizado</div>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
-                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Operação</div>
-                <div className="mt-2 text-lg font-black text-white md:text-xl">Mais previsibilidade</div>
+              <div className="rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Operação</div>
+                <div className="mt-2 text-lg font-black text-slate-950 md:text-xl">Mais previsibilidade</div>
               </div>
             </div>
           </aside>
@@ -132,7 +133,7 @@ const HowItWorks = () => {
 
         <div className="mt-16 md:mt-20 xl:mt-24">
           <div className="mb-10 max-w-2xl md:mb-12">
-            <h4 className="text-2xl font-black leading-tight text-white sm:text-3xl md:text-4xl">
+            <h4 className="text-2xl font-black leading-tight text-slate-950 sm:text-3xl md:text-4xl">
               Valor percebido por quem compra, por quem vende e por quem gerencia a operação.
             </h4>
           </div>
@@ -141,11 +142,11 @@ const HowItWorks = () => {
             {valuePillars.map((pillar) => (
               <article key={pillar.eyebrow} className={`${styles.cardPremium} h-full`}>
                 <div className="text-xs font-bold uppercase tracking-[0.25em] text-brand-accent">{pillar.eyebrow}</div>
-                <h5 className="mt-4 text-xl font-bold leading-tight text-white lg:text-2xl">{pillar.title}</h5>
-                <p className="mt-3 text-sm leading-relaxed text-slate-300 md:text-[0.95rem]">{pillar.description}</p>
+                <h5 className="mt-4 text-xl font-bold leading-tight text-slate-950 lg:text-2xl">{pillar.title}</h5>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-[0.95rem]">{pillar.description}</p>
                 <ul className="mt-5 space-y-3">
                   {pillar.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-3 text-sm text-slate-100">
+                    <li key={bullet} className="flex items-start gap-3 text-sm text-slate-700">
                       <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-brand-accent" />
                       <span>{bullet}</span>
                     </li>
@@ -156,26 +157,26 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="mt-16 rounded-[1.5rem] border border-white/10 bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 p-6 md:mt-20 md:p-8 lg:mt-24 lg:p-10">
+        <div className="mt-16 rounded-[1.5rem] border border-emerald-100 bg-gradient-to-r from-[#eef8f1] via-white to-[#f2fbf5] p-6 shadow-[0_26px_70px_rgba(18,61,43,0.08)] md:mt-20 md:p-8 lg:mt-24 lg:p-10">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
             <div className="max-w-2xl">
               <div className="text-xs font-bold uppercase tracking-[0.25em] text-brand-accent">Próximo passo</div>
-              <h4 className="mt-4 text-2xl font-black leading-tight text-white sm:text-3xl md:text-4xl">
+              <h4 className="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl md:text-4xl">
                 Quer enxergar o Giro B2B aplicado ao seu fluxo comercial?
               </h4>
-              <p className="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+              <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
                 Conheça melhor a proposta da plataforma e use a landing como ponto de entrada para levar o time
                 comercial à conversa certa.
               </p>
             </div>
 
             <div className="flex flex-col gap-4 self-start sm:flex-row lg:shrink-0 lg:self-center">
-              <a href="/about" className={styles.btnAccent}>
+              <Link to="/about" className={styles.btnAccent}>
                 Conhecer a Plataforma
-              </a>
-              <a href="/#contact" className={styles.btnOutline}>
+              </Link>
+              <Link to="/contato" className={styles.btnOutline}>
                 Falar com o Time
-              </a>
+              </Link>
             </div>
           </div>
         </div>

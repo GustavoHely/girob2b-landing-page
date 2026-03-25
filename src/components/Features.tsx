@@ -46,14 +46,14 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="bg-slate-900 py-20 md:py-24 xl:py-28">
+    <section id="features" className="border-y border-emerald-100/80 bg-[#eef7f1] py-20 md:py-24 xl:py-28">
       <div className={styles.container}>
         <div className="mx-auto mb-12 max-w-4xl text-center md:mb-16">
           <h2 className="text-brand-accent font-bold uppercase tracking-[0.3em] text-sm mb-4">Por que o Giro B2B?</h2>
-          <h3 className="mb-5 text-3xl font-black text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+          <h3 className="mb-5 text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl xl:text-6xl">
             Nós transformamos leads em <br /><span className="text-brand-accent">receitas verdadeiras.</span>
           </h3>
-          <p className="mx-auto max-w-3xl text-base leading-relaxed text-slate-200 md:text-lg">
+          <p className="mx-auto max-w-3xl text-base leading-relaxed text-slate-700 md:text-lg">
             Com a Giro B2B, sua empresa ganha mais oportunidades de transformar leads em receita.
             Nossa plataforma automatiza etapas de compra, cotação e orçamento entre diferentes materiais e
             fornecedores, reduzindo atritos operacionais e criando conexões mais fortes, estratégicas e lucrativas
@@ -67,8 +67,8 @@ const Features = () => {
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-accent/10 text-brand-accent md:mb-7 md:h-16 md:w-16">
                 {feature.icon}
               </div>
-              <h4 className="mb-3 text-lg font-bold text-white md:mb-4 md:text-xl">{feature.title}</h4>
-              <p className="text-sm font-medium leading-relaxed text-slate-200 opacity-90 md:text-[0.95rem]">
+              <h4 className="mb-3 text-lg font-bold text-slate-950 md:mb-4 md:text-xl">{feature.title}</h4>
+              <p className="text-sm font-medium leading-relaxed text-slate-600 md:text-[0.95rem]">
                 {feature.description}
               </p>
             </div>

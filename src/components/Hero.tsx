@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../styles/LandingPage.module.css';
 
 const Hero = () => {
@@ -6,20 +7,20 @@ const Hero = () => {
       <div className={styles.container}>
         <div className="grid xl:grid-cols-2 gap-12 items-center">
           <div className="text-left z-10">
-            <h1 className="text-4xl md:text-5xl font-black text-white leading-[1.1] mb-8">
+            <h1 className="text-4xl md:text-5xl font-black text-slate-950 leading-[1.1] mb-8">
               Simplifique suas compras e acelere seus resultados com o Giro B2B.
             </h1>
-            <p className="text-xl text-slate-100 mb-6 max-w-xl leading-relaxed opacity-90">
+            <p className="text-xl text-slate-700 mb-6 max-w-xl leading-relaxed">
               Deixe a plataforma cuidar dos detalhes para que você possa se concentrar no que importa. Visualize seu catálogo de forma dinâmica e realize negociações ágeis e seguras. Aumente sua eficiência operacional e alcance suas metas mais rápido.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="/#how-it-works" className={styles.btnAccent}>
+              <Link to="/como-funciona" className={styles.btnAccent}>
                 Ver Como Funciona
-              </a>
-              <a href="/about" className={styles.btnOutline}>
+              </Link>
+              <Link to="/about" className={styles.btnOutline}>
                 Conhecer a Plataforma
-              </a>
+              </Link>
             </div>
             
             <div className={styles.heroHighlightsGrid}>
@@ -54,11 +55,11 @@ const Hero = () => {
 
           <div className="relative hidden xl:block">
             <div className="absolute -top-20 -right-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl"></div>
-            <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-4 shadow-2xl rotate-3">
-              <div className={`bg-slate-900 rounded-2xl overflow-hidden aspect-video flex items-center justify-center ${styles.handshakeScene}`}>
+            <div className="relative rounded-3xl border border-emerald-100 bg-white/85 p-4 shadow-[0_34px_100px_rgba(18,61,43,0.12)] backdrop-blur-2xl rotate-2">
+              <div className={`bg-gradient-to-br from-white via-emerald-50 to-emerald-100/80 rounded-2xl overflow-hidden aspect-video flex items-center justify-center ${styles.handshakeScene}`}>
                 <div className={`${styles.handshakePerson} ${styles.handshakePersonLeft}`}>A</div>
                 <div className={`${styles.handshakeIcon} ${styles.handshakePulse}`}>
-                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-10 h-10 text-emerald-800" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M14.121 14.121a3 3 0 01-4.242 0L6.343 10.586A2 2 0 017 7.757l2.879 2.88a1 1 0 001.414 0l2.121-2.121a2 2 0 112.828 2.828l-2.121 2.121z" />
                     <path d="M15.536 5.05a4 4 0 00-5.657 0L7.05 7.879 5.636 6.464a2 2 0 00-2.829 2.828L5.05 11.536a4 4 0 002.829 1.172c.552 0 1.086-.112 1.586-.329l1.293 1.293a4 4 0 005.657 0l2.122-2.121a2 2 0 00-2.829-2.829l-2.121 2.122a1 1 0 01-1.415 0l-.707-.707 3.536-3.536a2 2 0 00-2.829-2.829z" />
                   </svg>

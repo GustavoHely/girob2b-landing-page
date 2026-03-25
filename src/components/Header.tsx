@@ -4,59 +4,56 @@ import styles from '../styles/LandingPage.module.css';
 
 const Header = () => {
   const { pathname } = useLocation();
-  const isHome = pathname === '/';
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    if (isHome) {
-      e.preventDefault();
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-    setIsMobileMenuOpen(false);
-  };
 
   return (
     <header className={styles.navbar}>
       <div className={`${styles.container} ${styles.navbarInner}`}>
         <Link to="/" className={styles.navBrand} onClick={() => setIsMobileMenuOpen(false)}>
           <img
-            src="/giro-b2b-logo-light.svg"
+            src="/giro-b2b-logo.svg"
             alt="Giro B2B"
-            className="w-9 h-9 rounded bg-white object-contain p-0.5 shrink-0"
+            className="w-9 h-9 rounded bg-white object-contain p-0.5 shadow-sm shrink-0"
           />
-          <div className="text-lg font-black tracking-tight text-white leading-none">
+          <div className="text-lg font-black tracking-tight text-slate-900 leading-none">
             Giro <span className="text-brand-accent">B2B</span>
           </div>
         </Link>
 
         <nav className={styles.navLinks}>
-          <a href="/#how-it-works" onClick={(e) => scrollToSection(e, 'how-it-works')} className={styles.navLink}>
+          <Link
+            to="/como-funciona"
+            className={`${styles.navLink} ${pathname === '/como-funciona' ? styles.navLinkActive : ''}`}
+          >
             Como Funciona
-          </a>
-          <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className={styles.navLink}>
+          </Link>
+          <Link
+            to="/funcionalidades"
+            className={`${styles.navLink} ${pathname === '/funcionalidades' ? styles.navLinkActive : ''}`}
+          >
             Funcionalidades
-          </a>
+          </Link>
           <Link
             to="/about"
             className={`${styles.navLink} ${pathname === '/about' ? styles.navLinkActive : ''}`}
           >
             Sobre
           </Link>
-          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navLink}>
+          <Link
+            to="/contato"
+            className={`${styles.navLink} ${pathname === '/contato' ? styles.navLinkActive : ''}`}
+          >
             Contato
-          </a>
+          </Link>
         </nav>
 
         <div className={styles.navCtas}>
-          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCtaSecondary}>
+          <Link to="/contato" className={styles.navCtaSecondary}>
             Entre em Contato
-          </a>
-          <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCta}>
+          </Link>
+          <Link to="/contato" className={styles.navCta}>
             Seja um Parceiro
-          </a>
+          </Link>
         </div>
 
         <button
@@ -75,26 +72,26 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenu}>
           <nav className={styles.mobileNav}>
-            <a href="/#how-it-works" onClick={(e) => scrollToSection(e, 'how-it-works')} className={styles.mobileNavLink}>
+            <Link to="/como-funciona" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Como Funciona
-            </a>
-            <a href="/#features" onClick={(e) => scrollToSection(e, 'features')} className={styles.mobileNavLink}>
+            </Link>
+            <Link to="/funcionalidades" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Funcionalidades
-            </a>
+            </Link>
             <Link to="/about" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Sobre
             </Link>
-            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.mobileNavLink}>
+            <Link to="/contato" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Contato
-            </a>
+            </Link>
           </nav>
           <div className={styles.mobileCtas}>
-            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCtaSecondary}>
+            <Link to="/contato" className={styles.navCtaSecondary} onClick={() => setIsMobileMenuOpen(false)}>
               Entre em Contato
-            </a>
-            <a href="/#contact" onClick={(e) => scrollToSection(e, 'contact')} className={styles.navCta}>
+            </Link>
+            <Link to="/contato" className={styles.navCta} onClick={() => setIsMobileMenuOpen(false)}>
               Seja um Parceiro
-            </a>
+            </Link>
           </div>
         </div>
       )}
