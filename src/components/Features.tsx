@@ -14,7 +14,7 @@ const features = [
   {
     id: 'workflow-automation',
     title: 'Automação de Fluxo',
-    description: 'Reduza o trabalho manual em até 80% com nossos fluxos automatizados.',
+    description: 'Menos etapas manuais entre a cotação e o fechamento, com fluxos organizados e diretos.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
