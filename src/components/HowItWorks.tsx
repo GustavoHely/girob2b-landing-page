@@ -55,7 +55,7 @@ const valuePillars = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="relative overflow-hidden bg-white py-20 md:py-24 xl:py-28">
+    <section id="como-funciona" className="relative overflow-hidden bg-white py-20 md:py-24 xl:py-28">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-200 to-transparent" />
       <div className="absolute -top-24 right-[-6rem] h-56 w-56 rounded-full bg-brand-accent/10 blur-3xl md:h-72 md:w-72" />
 
