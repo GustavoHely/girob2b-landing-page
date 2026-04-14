@@ -1,8 +1,11 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "redirects": [
+    { "source": "/about", "destination": "/#sobre", "permanent": true },
+    { "source": "/como-funciona", "destination": "/#como-funciona", "permanent": true },
+    { "source": "/funcionalidades", "destination": "/#funcionalidades", "permanent": true },
+    { "source": "/contato", "destination": "/#contato", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
