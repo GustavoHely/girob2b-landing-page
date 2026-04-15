@@ -19,12 +19,12 @@ export const teamMembers: TeamMember[] = [
     linkedinUrl: '[PENDENTE: URL LinkedIn do Gustavo]',
   },
   {
-    name: 'Vitor [PENDENTE: sobrenome]',
+    name: 'Vitor de Souza Barreto',
     title: 'CTO & Co-founder',
     role: 'Co-founder',
-    bio: 'Lidera tecnologia, arquitetura e desenvolvimento da plataforma GiroB2B.',
+    bio: 'CTO e co-fundador da Giro B2B. Engenheiro de software com experiência em React, Next.js, TypeScript e cloud (AWS, Supabase). Lidera tecnologia, arquitetura e desenvolvimento da plataforma.',
     photoUrl: '/team/vitor.jpg',
-    linkedinUrl: '[PENDENTE: URL LinkedIn do Vitor]',
+    linkedinUrl: 'https://www.linkedin.com/in/vitordsb/',
   },
   {
     name: 'Márcio [PENDENTE: sobrenome]',
