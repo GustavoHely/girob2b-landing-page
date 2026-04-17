@@ -22,33 +22,33 @@ const steps = [
 ];
 
 const flowHighlights = [
-  'Onboarding de empresas em um ecossistema B2B',
+  'Cadastro estruturado de empresas na plataforma',
   'Catálogo ativo para produtos e serviços',
   'Pesquisa com comparação de opções',
-  'Negociação centralizada com mais contexto',
+  'Negociação centralizada com histórico preservado',
 ];
 
 const valuePillars = [
   {
     eyebrow: 'Compras',
-    title: 'Mais velocidade para encontrar o parceiro certo',
+    title: 'Velocidade para encontrar o parceiro certo',
     description:
-      'A operação deixa de depender de troca dispersa de mensagens e ganha um fluxo mais claro para pesquisa, avaliação e negociação.',
-    bullets: ['Busca orientada a fornecedores qualificados', 'Comparação com menos ruído operacional'],
+      'A operação ganha um fluxo claro para pesquisa, avaliação e negociação, sem depender de troca dispersa de mensagens em canais paralelos.',
+    bullets: ['Busca orientada a fornecedores qualificados', 'Comparação com ruído operacional reduzido'],
   },
   {
     eyebrow: 'Vendas',
-    title: 'Mais previsibilidade para transformar catálogo em demanda',
+    title: 'Previsibilidade para transformar catálogo em demanda',
     description:
-      'Fornecedores deixam de atuar apenas por indicação e passam a aparecer em uma vitrine preparada para relacionamento comercial contínuo.',
-    bullets: ['Catálogo exposto de forma mais estratégica', 'Canal recorrente para novas conversas comerciais'],
+      'Fornecedores passam a aparecer em uma vitrine preparada para relacionamento comercial contínuo, com presença estável além da indicação pontual.',
+    bullets: ['Catálogo exposto de forma estratégica', 'Canal recorrente para novas conversas comerciais'],
   },
   {
     eyebrow: 'Gestão',
-    title: 'Mais visibilidade para acompanhar o ciclo inteiro',
+    title: 'Visibilidade do ciclo comercial completo',
     description:
-      'A liderança passa a enxergar o andamento da operação em um só ambiente, reduzindo gargalos entre descoberta, proposta e fechamento.',
-    bullets: ['Histórico mais organizado das negociações', 'Leitura melhor dos gargalos da operação'],
+      'A liderança enxerga o andamento da operação em um só ambiente, com leitura clara dos gargalos entre descoberta, proposta e fechamento.',
+    bullets: ['Histórico organizado das negociações', 'Leitura objetiva dos gargalos da operação'],
   },
 ];
 
