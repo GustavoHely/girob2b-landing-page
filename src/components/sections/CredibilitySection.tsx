@@ -21,6 +21,16 @@ const credibilityItems = [
     value: 'comercial@girob2b.com.br',
     sub: 'Respondemos em até 2 dias úteis',
   },
+  {
+    label: 'Mercado endereçável',
+    value: '24,2 milhões de empresas',
+    sub: 'Base ativa no Brasil (IBGE)',
+  },
+  {
+    label: 'Contexto',
+    value: 'Comércio B2B fragmentado',
+    sub: 'Majoritariamente off-line, em canais dispersos',
+  },
 ];
 
 export default function CredibilitySection() {
@@ -35,7 +45,7 @@ export default function CredibilitySection() {
             Uma startup formal, com registro público e equipe identificada.
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {credibilityItems.map((item) => (
             <div
               key={item.label}
