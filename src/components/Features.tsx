@@ -5,7 +5,7 @@ const features = [
     id: 'descoberta',
     title: 'Descoberta de fornecedores por categoria',
     description:
-      'Busca por segmento, região e tipo de produto. Chega de depender de indicação informal ou pesquisa genérica no Google.',
+      'Busca direta por segmento, região e tipo de produto, com fornecedores apresentados em contexto para facilitar comparação e decisão.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -27,7 +27,7 @@ const features = [
     id: 'comparacao',
     title: 'Comparação com contexto',
     description:
-      'Avalie opções com filtros, referências e histórico de atividade, em vez de uma troca dispersa de mensagens entre planilhas e WhatsApp.',
+      'Avaliação de opções com filtros, referências e histórico de atividade, mantendo o processo organizado em um só ambiente.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18M7 12h10m-7 6h4" />
