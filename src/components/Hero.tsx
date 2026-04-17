@@ -6,19 +6,22 @@ const Hero = () => {
       <div className={styles.container}>
         <div className="grid xl:grid-cols-2 gap-12 items-center">
           <div className="text-left z-10">
-            <h1 className="text-4xl md:text-5xl font-black text-slate-950 leading-[1.1] mb-8">
-              O marketplace B2B brasileiro que conecta fornecedores e compradores do seu setor.
+            <div className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-brand-accent">
+              Marketplace B2B Brasileiro
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-slate-950 leading-[1.1] mb-6">
+              A camada brasileira que conecta empresas entre si.
             </h1>
-            <p className="text-xl text-slate-700 mb-6 max-w-xl leading-relaxed">
-              Chega de depender de indicação informal, busca genérica no Google e grupos de mensagem. A GiroB2B organiza a descoberta, a pesquisa e o relacionamento entre empresas num só lugar, de forma clara e com mais contexto.
+            <p className="text-xl text-slate-700 mb-8 max-w-xl leading-relaxed">
+              Uma plataforma para organizar a descoberta, a pesquisa e o relacionamento comercial entre empresas de todos os setores do Brasil.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="#como-funciona" className={styles.btnAccent}>
-                Ver Como Funciona
+                Conhecer a proposta
               </a>
-              <a href="#sobre" className={styles.btnOutline}>
-                Conhecer a Plataforma
+              <a href="#contato" className={styles.btnOutline}>
+                Falar com o Time
               </a>
             </div>
 
