@@ -29,6 +29,12 @@ const Header = () => {
           <a href="/#sobre" className={styles.navLink}>
             Sobre
           </a>
+          <a href="/#credibilidade" className={styles.navLink}>
+            Empresa
+          </a>
+          <a href="/#faq" className={styles.navLink}>
+            FAQ
+          </a>
           <a href="/#contato" className={styles.navLink}>
             Contato
           </a>
@@ -64,6 +70,12 @@ const Header = () => {
             </a>
             <a href="/#sobre" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Sobre
+            </a>
+            <a href="/#credibilidade" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
+              Empresa
+            </a>
+            <a href="/#faq" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
+              FAQ
             </a>
             <a href="/#contato" className={styles.mobileNavLink} onClick={() => setIsMobileMenuOpen(false)}>
               Contato
