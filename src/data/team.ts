@@ -6,7 +6,7 @@ export interface TeamMember {
   role: TeamRole;
   bio: string;
   photoUrl: string;
-  linkedinUrl: string;
+  linkedinUrl: string | null;
 }
 
 export const teamMembers: TeamMember[] = [
@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     role: 'Co-founder',
     bio: 'CEO e co-fundador da GiroB2B. Lidera produto, estratégia e visão de negócios na construção de uma camada de conexão comercial entre empresas de diferentes setores no Brasil.',
     photoUrl: '/team/gustavo.jpg',
-    linkedinUrl: '[PENDENTE: URL LinkedIn do Gustavo]',
+    linkedinUrl: null,
   },
   {
     name: 'Vitor de Souza Barreto',

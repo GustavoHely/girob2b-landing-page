@@ -7,7 +7,7 @@ const features = [
     description:
       'Busca por segmento, região e tipo de produto. Chega de depender de indicação informal ou pesquisa genérica no Google.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     ),
@@ -18,7 +18,7 @@ const features = [
     description:
       'Fornecedores publicam portfólio, capacidade e diferenciais em uma vitrine digital pensada para gerar oportunidades comerciais reais.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
       </svg>
     ),
@@ -29,7 +29,7 @@ const features = [
     description:
       'Avalie opções com filtros, referências e histórico de atividade, em vez de uma troca dispersa de mensagens entre planilhas e WhatsApp.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18M7 12h10m-7 6h4" />
       </svg>
     ),
@@ -40,7 +40,7 @@ const features = [
     description:
       'Dados cadastrais tratados conforme a Lei Geral de Proteção de Dados, com políticas claras de uso e compartilhamento.',
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
       </svg>
     ),

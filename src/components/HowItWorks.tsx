@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from '../styles/LandingPage.module.css';
 
 const steps = [
@@ -101,7 +100,7 @@ const HowItWorks = () => {
               {flowHighlights.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-slate-800">
                   <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-accent/15 text-brand-accent">
-                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
@@ -171,12 +170,12 @@ const HowItWorks = () => {
             </div>
 
             <div className="flex flex-col gap-4 self-start sm:flex-row lg:shrink-0 lg:self-center">
-              <Link to="/about" className={styles.btnAccent}>
+              <a href="#sobre" className={styles.btnAccent}>
                 Conhecer a Plataforma
-              </Link>
-              <Link to="/contato" className={styles.btnOutline}>
+              </a>
+              <a href="#contato" className={styles.btnOutline}>
                 Falar com o Time
-              </Link>
+              </a>
             </div>
           </div>
         </div>

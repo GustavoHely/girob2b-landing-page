@@ -13,7 +13,7 @@ export default function FAQSection() {
             Perguntas frequentes
           </p>
           <h2 className="mt-4 text-3xl font-black text-slate-950 md:text-4xl xl:text-5xl">
-            Duvidas mais comuns sobre a GiroB2B.
+            Dúvidas mais comuns sobre a GiroB2B.
           </h2>
           <p className="mt-4 text-base text-slate-700 md:text-lg">
             Se a sua pergunta não estiver aqui, fale com a gente em{' '}
@@ -59,6 +59,7 @@ export default function FAQSection() {
                       strokeWidth={2.5}
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      aria-hidden="true"
                     >
                       <path d="M12 4v16m8-8H4" />
                     </svg>

@@ -25,7 +25,7 @@ const Hero = () => {
             <div className={styles.heroHighlightsGrid}>
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -34,7 +34,7 @@ const Hero = () => {
 
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.013 8.013 0 01-5.699-2.299C6.602 17.887 6.039 18 5.6 18c-1.4 0-2.321-.92-2.58-2.148A7.98 7.98 0 014 12C4 7.582 7.582 4 12 4s8 3.582 8 8z" />
                   </svg>
                 </div>
@@ -43,7 +43,7 @@ const Hero = () => {
 
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                   </svg>
                 </div>

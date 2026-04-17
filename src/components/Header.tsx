@@ -35,11 +35,8 @@ const Header = () => {
         </nav>
 
         <div className={styles.navCtas}>
-          <a href="/#contato" className={styles.navCtaSecondary}>
-            Entre em Contato
-          </a>
           <a href="/#contato" className={styles.navCta}>
-            Seja um Parceiro
+            Falar com o Time
           </a>
         </div>
 
@@ -73,11 +70,8 @@ const Header = () => {
             </a>
           </nav>
           <div className={styles.mobileCtas}>
-            <a href="/#contato" className={styles.navCtaSecondary} onClick={() => setIsMobileMenuOpen(false)}>
-              Entre em Contato
-            </a>
             <a href="/#contato" className={styles.navCta} onClick={() => setIsMobileMenuOpen(false)}>
-              Seja um Parceiro
+              Falar com o Time
             </a>
           </div>
         </div>
