@@ -66,7 +66,7 @@ const HowItWorks = () => {
             Uma jornada única para pesquisar, vender e negociar no B2B.
           </h3>
           <p className="text-base leading-relaxed text-slate-700 md:text-lg">
-            Em vez de operar compras e vendas em canais separados, o Giro B2B organiza a jornada em um ambiente
+            Em vez de operar compras e vendas em canais separados, o GiroB2B organiza a jornada em um ambiente
             único. Isso reduz ruído, melhora o contexto das negociações e dá mais consistência para transformar
             catálogo em relacionamento comercial real.
           </p>
@@ -162,7 +162,7 @@ const HowItWorks = () => {
             <div className="max-w-2xl">
               <div className="text-xs font-bold uppercase tracking-[0.25em] text-brand-accent">Próximo passo</div>
               <h4 className="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl md:text-4xl">
-                Quer enxergar o Giro B2B aplicado ao seu fluxo comercial?
+                Quer enxergar o GiroB2B aplicado ao seu fluxo comercial?
               </h4>
               <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
                 Conheça melhor a proposta da plataforma e use a landing como ponto de entrada para levar o time

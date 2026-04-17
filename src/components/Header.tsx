@@ -11,11 +11,11 @@ const Header = () => {
         <Link to="/" className={styles.navBrand} onClick={() => setIsMobileMenuOpen(false)}>
           <img
             src="/giro-b2b-logo.svg"
-            alt="Giro B2B"
+            alt="GiroB2B"
             className="w-9 h-9 rounded bg-white object-contain p-0.5 shadow-sm shrink-0"
           />
           <div className="text-lg font-black tracking-tight text-slate-900 leading-none">
-            Giro <span className="text-brand-accent">B2B</span>
+            Giro<span className="text-brand-accent">B2B</span>
           </div>
         </Link>
 

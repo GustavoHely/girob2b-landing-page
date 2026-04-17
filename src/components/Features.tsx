@@ -57,7 +57,7 @@ const Features = () => {
             Uma base comercial clara para quem compra e para quem vende B2B.
           </h3>
           <p className="mx-auto max-w-3xl text-base leading-relaxed text-slate-700 md:text-lg">
-            A Giro B2B organiza as etapas que hoje vivem soltas entre catálogos desatualizados,
+            A GiroB2B organiza as etapas que hoje vivem soltas entre catálogos desatualizados,
             grupos de mensagem e buscas genéricas, para que a conexão entre fornecedor e comprador fique mais clara.
           </p>
         </div>

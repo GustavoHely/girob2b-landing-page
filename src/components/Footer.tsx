@@ -7,10 +7,10 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-8">
               <img
                 src="/giro-b2b-logo.svg"
-                alt="Giro B2B"
+                alt="GiroB2B"
                 className="w-10 h-10 rounded bg-white object-contain p-0.5 shadow-sm"
               />
-              <span className="text-xl font-black tracking-tighter text-slate-950">Giro <span className="text-brand-accent">B2B</span></span>
+              <span className="text-xl font-black tracking-tighter text-slate-950">Giro<span className="text-brand-accent">B2B</span></span>
             </div>
             <p className="leading-relaxed text-slate-600">
               Liderando a transformação digital no mercado B2B com tecnologia de ponta e foco em resultados.
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-center justify-between gap-6 border-t border-emerald-100 pt-12 md:flex-row">
           <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Giro B2B. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} GiroB2B. Todos os direitos reservados.
           </p>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
             Política de privacidade e termos em construção

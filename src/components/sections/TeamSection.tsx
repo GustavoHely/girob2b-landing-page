@@ -24,13 +24,13 @@ export default function TeamSection() {
       <div className={styles.container}>
         <div className="mx-auto max-w-3xl text-center">
           <span className="text-xs font-bold uppercase tracking-[0.28em] text-brand-accent">
-            Quem constrói a Giro B2B
+            Quem constrói a GiroB2B
           </span>
           <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-4xl xl:text-5xl">
             Um time pequeno, dedicado a resolver um problema real do B2B brasileiro.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-slate-600 md:text-lg">
-            A Giro B2B é construída por pessoas que viveram de perto a dificuldade de comprar e
+            A GiroB2B é construída por pessoas que viveram de perto a dificuldade de comprar e
             vender entre empresas no Brasil.
           </p>
         </div>

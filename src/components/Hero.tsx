@@ -10,7 +10,7 @@ const Hero = () => {
               O marketplace B2B brasileiro que conecta fornecedores e compradores do seu setor.
             </h1>
             <p className="text-xl text-slate-700 mb-6 max-w-xl leading-relaxed">
-              Chega de depender de indicação informal, busca genérica no Google e grupos de mensagem. A Giro B2B organiza a descoberta, a pesquisa e o relacionamento entre empresas num só lugar, de forma clara e com mais contexto.
+              Chega de depender de indicação informal, busca genérica no Google e grupos de mensagem. A GiroB2B organiza a descoberta, a pesquisa e o relacionamento entre empresas num só lugar, de forma clara e com mais contexto.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
