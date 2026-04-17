@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-xl font-black tracking-tighter text-slate-950">Giro<span className="text-brand-accent">B2B</span></span>
             </div>
             <p className="leading-relaxed text-slate-600">
-              Liderando a transformação digital no mercado B2B com tecnologia de ponta e foco em resultados.
+              Construindo uma camada brasileira de conexão comercial entre empresas de todos os setores.
             </p>
           </div>
 
