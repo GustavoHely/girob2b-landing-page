@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Márcio Ramos',
     title: 'Head of BD',
     role: 'Head of BD',
-    bio: 'Mais de 30 anos conectando empresas no mercado B2B brasileiro. Na Giro, lidera relacionamento comercial, parcerias e aquisição de compradores.',
+    bio: 'Mais de 30 anos conectando empresas no mercado B2B brasileiro. Na GiroB2B, lidera relacionamento comercial, parcerias e aquisição de compradores.',
     photoUrl: '/team/marcio.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/marcio-ramos-933b80168/',
   },
