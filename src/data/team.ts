@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     role: 'Co-founder',
     bio: 'CEO e co-fundador da GiroB2B. Lidera produto, estratégia e visão de negócios na construção de uma camada de conexão comercial entre empresas de diferentes setores no Brasil.',
     photoUrl: '/team/gustavo.jpg',
-    linkedinUrl: null,
+    linkedinUrl: 'https://www.linkedin.com/in/gustavo-hely/',
   },
   {
     name: 'Vitor de Souza Barreto',
