@@ -6,26 +6,29 @@ const Hero = () => {
       <div className={styles.container}>
         <div className="grid xl:grid-cols-2 gap-12 items-center">
           <div className="text-left z-10">
-            <h1 className="text-4xl md:text-5xl font-black text-slate-950 leading-[1.1] mb-8">
-              O marketplace B2B brasileiro que conecta fornecedores e compradores do seu setor.
+            <div className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-brand-accent">
+              Marketplace B2B Brasileiro
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-slate-950 leading-[1.1] mb-6">
+              A camada brasileira que conecta empresas entre si.
             </h1>
-            <p className="text-xl text-slate-700 mb-6 max-w-xl leading-relaxed">
-              Chega de depender de indicação informal, busca genérica no Google e grupos de mensagem. A Giro B2B organiza a descoberta, a pesquisa e o relacionamento entre empresas num só lugar, de forma clara e com mais contexto.
+            <p className="text-xl text-slate-700 mb-8 max-w-xl leading-relaxed">
+              Uma plataforma para organizar a descoberta, a pesquisa e o relacionamento comercial entre empresas de todos os setores do Brasil.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="#como-funciona" className={styles.btnAccent}>
-                Ver Como Funciona
+                Conhecer a proposta
               </a>
-              <a href="#sobre" className={styles.btnOutline}>
-                Conhecer a Plataforma
+              <a href="#contato" className={styles.btnOutline}>
+                Falar com o Time
               </a>
             </div>
 
             <div className={styles.heroHighlightsGrid}>
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -34,7 +37,7 @@ const Hero = () => {
 
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.013 8.013 0 01-5.699-2.299C6.602 17.887 6.039 18 5.6 18c-1.4 0-2.321-.92-2.58-2.148A7.98 7.98 0 014 12C4 7.582 7.582 4 12 4s8 3.582 8 8z" />
                   </svg>
                 </div>
@@ -43,7 +46,7 @@ const Hero = () => {
 
               <div className={styles.heroHighlightCard}>
                 <div className={`${styles.heroHighlightIcon} text-brand-accent`}>
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                   </svg>
                 </div>

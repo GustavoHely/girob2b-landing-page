@@ -4,7 +4,7 @@ const contactReasons = [
   {
     title: 'Quero comprar melhor',
     description:
-      'Entenda como a Giro B2B pode ajudar sua equipe a descobrir fornecedores, organizar pesquisas e comparar opções com mais contexto.',
+      'Entenda como a GiroB2B pode ajudar sua equipe a descobrir fornecedores, organizar pesquisas e comparar opções com mais contexto.',
   },
   {
     title: 'Quero vender melhor',
@@ -26,7 +26,7 @@ const ContactSection = () => {
           <div>
             <div className="mb-4 text-sm font-bold uppercase tracking-[0.28em] text-brand-accent">Contato</div>
             <h2 className="max-w-3xl text-3xl font-black leading-[1.1] text-slate-950 md:text-5xl">
-              Vamos conversar sobre como a Giro B2B pode entrar no seu fluxo comercial.
+              Vamos conversar sobre como a GiroB2B pode entrar no seu fluxo comercial.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-slate-700 md:text-lg">
               Como a plataforma ainda está em construção, a proposta agora é abrir caminho para relacionamento,
@@ -34,7 +34,7 @@ const ContactSection = () => {
             </p>
 
             <div className="mt-6 flex items-center gap-3 rounded-2xl border border-emerald-100 bg-[#f4fbf6] px-6 py-4 shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <div>

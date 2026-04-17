@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from '../styles/LandingPage.module.css';
 
 const steps = [
@@ -23,33 +22,33 @@ const steps = [
 ];
 
 const flowHighlights = [
-  'Onboarding de empresas em um ecossistema B2B',
+  'Cadastro estruturado de empresas na plataforma',
   'Catálogo ativo para produtos e serviços',
   'Pesquisa com comparação de opções',
-  'Negociação centralizada com mais contexto',
+  'Negociação centralizada com histórico preservado',
 ];
 
 const valuePillars = [
   {
     eyebrow: 'Compras',
-    title: 'Mais velocidade para encontrar o parceiro certo',
+    title: 'Velocidade para encontrar o parceiro certo',
     description:
-      'A operação deixa de depender de troca dispersa de mensagens e ganha um fluxo mais claro para pesquisa, avaliação e negociação.',
-    bullets: ['Busca orientada a fornecedores qualificados', 'Comparação com menos ruído operacional'],
+      'A operação ganha um fluxo claro para pesquisa, avaliação e negociação, sem depender de troca dispersa de mensagens em canais paralelos.',
+    bullets: ['Busca orientada a fornecedores qualificados', 'Comparação com ruído operacional reduzido'],
   },
   {
     eyebrow: 'Vendas',
-    title: 'Mais previsibilidade para transformar catálogo em demanda',
+    title: 'Previsibilidade para transformar catálogo em demanda',
     description:
-      'Fornecedores deixam de atuar apenas por indicação e passam a aparecer em uma vitrine preparada para relacionamento comercial contínuo.',
-    bullets: ['Catálogo exposto de forma mais estratégica', 'Canal recorrente para novas conversas comerciais'],
+      'Fornecedores passam a aparecer em uma vitrine preparada para relacionamento comercial contínuo, com presença estável além da indicação pontual.',
+    bullets: ['Catálogo exposto de forma estratégica', 'Canal recorrente para novas conversas comerciais'],
   },
   {
     eyebrow: 'Gestão',
-    title: 'Mais visibilidade para acompanhar o ciclo inteiro',
+    title: 'Visibilidade do ciclo comercial completo',
     description:
-      'A liderança passa a enxergar o andamento da operação em um só ambiente, reduzindo gargalos entre descoberta, proposta e fechamento.',
-    bullets: ['Histórico mais organizado das negociações', 'Leitura melhor dos gargalos da operação'],
+      'A liderança enxerga o andamento da operação em um só ambiente, com leitura clara dos gargalos entre descoberta, proposta e fechamento.',
+    bullets: ['Histórico organizado das negociações', 'Leitura objetiva dos gargalos da operação'],
   },
 ];
 
@@ -66,7 +65,7 @@ const HowItWorks = () => {
             Uma jornada única para pesquisar, vender e negociar no B2B.
           </h3>
           <p className="text-base leading-relaxed text-slate-700 md:text-lg">
-            Em vez de operar compras e vendas em canais separados, o Giro B2B organiza a jornada em um ambiente
+            Em vez de operar compras e vendas em canais separados, o GiroB2B organiza a jornada em um ambiente
             único. Isso reduz ruído, melhora o contexto das negociações e dá mais consistência para transformar
             catálogo em relacionamento comercial real.
           </p>
@@ -101,7 +100,7 @@ const HowItWorks = () => {
               {flowHighlights.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-slate-800">
                   <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-accent/15 text-brand-accent">
-                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
@@ -162,7 +161,7 @@ const HowItWorks = () => {
             <div className="max-w-2xl">
               <div className="text-xs font-bold uppercase tracking-[0.25em] text-brand-accent">Próximo passo</div>
               <h4 className="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl md:text-4xl">
-                Quer enxergar o Giro B2B aplicado ao seu fluxo comercial?
+                Quer enxergar o GiroB2B aplicado ao seu fluxo comercial?
               </h4>
               <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
                 Conheça melhor a proposta da plataforma e use a landing como ponto de entrada para levar o time
@@ -171,12 +170,12 @@ const HowItWorks = () => {
             </div>
 
             <div className="flex flex-col gap-4 self-start sm:flex-row lg:shrink-0 lg:self-center">
-              <Link to="/about" className={styles.btnAccent}>
+              <a href="#sobre" className={styles.btnAccent}>
                 Conhecer a Plataforma
-              </Link>
-              <Link to="/contato" className={styles.btnOutline}>
+              </a>
+              <a href="#contato" className={styles.btnOutline}>
                 Falar com o Time
-              </Link>
+              </a>
             </div>
           </div>
         </div>

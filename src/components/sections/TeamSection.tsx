@@ -24,55 +24,50 @@ export default function TeamSection() {
       <div className={styles.container}>
         <div className="mx-auto max-w-3xl text-center">
           <span className="text-xs font-bold uppercase tracking-[0.28em] text-brand-accent">
-            Quem constrói a Giro B2B
+            Quem constrói a GiroB2B
           </span>
           <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-4xl xl:text-5xl">
             Um time pequeno, dedicado a resolver um problema real do B2B brasileiro.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-slate-600 md:text-lg">
-            A Giro B2B é construída por pessoas que viveram de perto a dificuldade de comprar e
+            A GiroB2B é construída por pessoas que viveram de perto a dificuldade de comprar e
             vender entre empresas no Brasil.
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
-          {teamMembers.map((member) => {
-            const cleanName = member.name.replace(/\s*\[PENDENTE:.*?\]/g, '').trim();
-            const hasLinkedIn = !member.linkedinUrl.startsWith('[PENDENTE');
-
-            return (
-              <article
-                key={member.name}
-                className={`${styles.cardPremium} flex h-full flex-col items-center text-center`}
-              >
-                <div className="h-28 w-28 overflow-hidden rounded-full border border-brand-accent/30 bg-emerald-50">
-                  <img
-                    src={member.photoUrl}
-                    alt={'Foto de ' + cleanName}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <span className="mt-5 text-xs font-bold uppercase tracking-[0.28em] text-brand-accent">
-                  {member.role}
-                </span>
-                <h3 className="mt-2 text-xl font-black text-slate-900">{cleanName}</h3>
-                <div className="mt-1 text-sm font-bold text-slate-700">{member.title}</div>
-                <p className="mt-4 mb-6 text-sm leading-relaxed text-slate-600">{member.bio}</p>
-                {hasLinkedIn && (
-                  <a
-                    href={member.linkedinUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-auto inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-emerald-700 transition-colors"
-                  >
-                    <LinkedInIcon />
-                    Ver no LinkedIn
-                  </a>
-                )}
-              </article>
-            );
-          })}
+          {teamMembers.map((member) => (
+            <article
+              key={member.name}
+              className={`${styles.cardPremium} flex h-full flex-col items-center text-center`}
+            >
+              <div className="h-28 w-28 overflow-hidden rounded-full border border-brand-accent/30 bg-emerald-50">
+                <img
+                  src={member.photoUrl}
+                  alt={'Foto de ' + member.name}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <span className="mt-5 text-xs font-bold uppercase tracking-[0.28em] text-brand-accent">
+                {member.role}
+              </span>
+              <h3 className="mt-2 text-xl font-black text-slate-900">{member.name}</h3>
+              <div className="mt-1 text-sm font-bold text-slate-700">{member.title}</div>
+              <p className="mt-4 mb-6 text-sm leading-relaxed text-slate-600">{member.bio}</p>
+              {member.linkedinUrl && (
+                <a
+                  href={member.linkedinUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-auto inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-emerald-700 transition-colors"
+                >
+                  <LinkedInIcon />
+                  Ver no LinkedIn
+                </a>
+              )}
+            </article>
+          ))}
         </div>
       </div>
     </section>
