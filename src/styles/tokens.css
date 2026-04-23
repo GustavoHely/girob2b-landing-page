@@ -13,6 +13,7 @@
 
   /* Typography scale */
   --font-family-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-family-display: 'Instrument Serif', Georgia, serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;

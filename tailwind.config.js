@@ -22,6 +22,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        display: ['Instrument Serif', 'Georgia', 'serif'],
       },
       maxWidth: {
         container: '1200px',
