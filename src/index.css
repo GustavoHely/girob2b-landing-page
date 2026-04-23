@@ -1,45 +1,28 @@
-@import "tailwindcss/theme";
+@import './styles/tokens.css';
+@import 'tailwindcss';
 
-@theme {
-  --color-brand-accent: #12c768;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
 }
-
-@source "./index.html";
-@source "./src/**/*.{js,ts,jsx,tsx}";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
 }
-
-:root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #f7fbf8;
-  color: #173428;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  background: linear-gradient(180deg, #f9fcfa 0%, #f3f8f4 100%);
-  color: #173428;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #e7f0ea;
-}
-::-webkit-scrollbar-thumb {
-  background: #a8bfaf;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #89a492;
+  font-family: var(--font-family-sans);
+  color: var(--color-graphite);
+  background: var(--color-off-white);
+  -webkit-font-smoothing: antialiased;
 }

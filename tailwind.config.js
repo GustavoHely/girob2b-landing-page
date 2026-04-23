@@ -1,25 +1,34 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: ['./src/**/*.{ts,tsx}', './index.html'],
   theme: {
     extend: {
       colors: {
-        brand: {
-          dark: '#0a192f',
-          blue: '#112240',
-          lightBlue: '#233554',
-          accent: '#12c768',
-          cyan: '#64ffda',
+        teal: {
+          deep: '#0A5C5C',
+          mid: '#166666',
+          light: '#2A7A7A',
+        },
+        gold: {
+          burnt: '#C08A2E',
+          soft: '#D4A04A',
+        },
+        offwhite: '#F4F1EA',
+        graphite: {
+          DEFAULT: '#1A1F1F',
+          soft: '#3A4040',
         },
       },
-      backgroundImage: {
-        'premium-gradient': 'linear-gradient(135deg, #0b1f16 0%, #103323 50%, #12402a 100%)',
-        'hero-gradient': 'linear-gradient(135deg, #0cd46a 0%, #089e55 100%)',
+      fontFamily: {
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+      },
+      maxWidth: {
+        container: '1200px',
       },
     },
   },
   plugins: [],
-}
+};
+
+export default config;
