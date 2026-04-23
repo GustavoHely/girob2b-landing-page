@@ -18,7 +18,7 @@ export function FAQV2() {
         <div className="max-w-3xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
-            <p className="font-display italic text-gold-burnt text-base mb-3">Dúvidas comuns</p>
+            <p className="font-sans font-bold uppercase tracking-widest text-gold-burnt text-xs mb-3">Dúvidas comuns</p>
             <h2 className="font-sans font-black text-3xl md:text-4xl text-graphite">
               Perguntas frequentes
             </h2>

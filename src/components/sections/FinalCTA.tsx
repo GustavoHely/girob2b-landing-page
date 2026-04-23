@@ -42,12 +42,12 @@ export function FinalCTA() {
 
       <div className="relative max-w-container mx-auto px-6 text-center">
         {/* Eyebrow */}
-        <p className="font-display italic text-gold-soft text-base mb-6">Pronto para começar?</p>
+        <p className="font-sans font-bold uppercase tracking-widest text-gold-soft text-xs mb-6">Pronto para começar?</p>
 
         {/* Headline — mix display + sans */}
         <h2 className="font-sans font-black text-4xl md:text-5xl text-offwhite mb-8 max-w-3xl mx-auto leading-tight">
           Pronto para{' '}
-          <span className="font-display italic font-normal">conectar sua empresa</span>
+          <span className="font-sans font-black" style={{ color: '#D4A04A' }}>conectar sua empresa</span>
           {' '}a compradores qualificados?
         </h2>
 

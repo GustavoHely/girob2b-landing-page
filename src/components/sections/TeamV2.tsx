@@ -17,7 +17,7 @@ export function TeamV2() {
               <img
                 src={m.photoUrl}
                 alt={m.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-offwhite"
+                className="w-40 h-40 rounded-full mx-auto mb-4 object-cover border-4 border-offwhite"
                 loading="lazy"
               />
               <h3 className="text-lg font-bold text-teal-deep mb-1">{m.name}</h3>

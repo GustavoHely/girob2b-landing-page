@@ -24,7 +24,7 @@ export function PainPoints() {
       <div className="max-w-container mx-auto px-6">
         {/* Eyebrow + heading */}
         <div className="text-center mb-14">
-          <p className="font-display italic text-gold-burnt text-base mb-3">O problema</p>
+          <p className="font-sans font-bold uppercase tracking-widest text-gold-burnt text-xs mb-3">O problema</p>
           <h2 className="font-sans font-black text-3xl md:text-4xl text-graphite mb-5 max-w-2xl mx-auto">
             Encontrar fornecedores B2B no Brasil hoje é manual e caro
           </h2>

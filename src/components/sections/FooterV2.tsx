@@ -13,7 +13,7 @@ export function FooterV2() {
             alt="GiroB2B"
             className="h-12 w-12 mb-4 object-contain"
           />
-          <p className="font-display italic text-offwhite/60 text-base leading-snug max-w-xs">
+          <p className="font-sans text-offwhite/70 text-sm leading-relaxed max-w-xs">
             Conecte sua empresa a compradores B2B qualificados. Sem intermediários.
           </p>
           <a

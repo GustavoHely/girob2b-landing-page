@@ -2,11 +2,11 @@ import { HOW_IT_WORKS_STEPS } from '@/data/howItWorksSteps';
 
 export function HowItWorksV2() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="como-funciona" className="py-16 md:py-24 bg-white">
       <div className="max-w-container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
-          <p className="font-display italic text-gold-burnt text-base mb-3">Em três passos</p>
+          <p className="font-sans font-bold uppercase tracking-widest text-gold-burnt text-xs mb-3">Em três passos</p>
           <h2 className="font-sans font-black text-3xl md:text-4xl text-graphite mb-4">
             Como a GiroB2B resolve
           </h2>
@@ -33,9 +33,9 @@ export function HowItWorksV2() {
                   />
                 )}
 
-                {/* Step number — Instrument Serif italic, big */}
+                {/* Step number — DM Sans black, big */}
                 <div
-                  className="font-display italic leading-none mb-5 select-none"
+                  className="font-sans font-black leading-none mb-5 select-none"
                   style={{
                     fontSize: '5rem',
                     color: '#C08A2E',

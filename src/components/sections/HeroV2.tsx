@@ -194,8 +194,8 @@ export function HeroV2() {
           <div className="space-y-6">
             {/* Eyebrow */}
             <p
-              className="font-display italic text-base"
-              style={{ color: '#D4A04A', letterSpacing: '0.01em' }}
+              className="font-sans font-bold uppercase tracking-widest text-xs"
+              style={{ color: '#D4A04A' }}
             >
               Marketplace B2B brasileiro
             </p>
@@ -232,8 +232,8 @@ export function HeroV2() {
 
               {/* Secondary text */}
               <p
-                className="font-display italic text-sm mt-4"
-                style={{ color: 'rgba(244, 241, 234, 0.6)' }}
+                className="font-sans text-sm mt-4"
+                style={{ color: 'rgba(244, 241, 234, 0.65)' }}
               >
                 Lançamento previsto para maio/2026 — quem entra na lista é avisado antes.
               </p>

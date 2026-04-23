@@ -4,6 +4,7 @@ import { IconCheck, IconX } from '@/components/icons';
 export function DifferentiatorsV2() {
   return (
     <section
+      id="diferenciais"
       className="py-16 md:py-24 relative overflow-hidden"
       style={{ background: '#0A5C5C' }}
     >
@@ -22,13 +23,13 @@ export function DifferentiatorsV2() {
       <div className="max-w-container mx-auto px-6 relative">
         {/* Heading */}
         <div className="text-center mb-14">
-          <p className="font-display italic text-gold-soft text-base mb-3">O que muda com a GiroB2B</p>
+          <p className="font-sans font-bold uppercase tracking-widest text-gold-soft text-xs mb-3">O que muda com a GiroB2B</p>
           <h2 className="font-sans font-black text-3xl md:text-4xl text-offwhite mb-4 max-w-2xl mx-auto">
             Por que a GiroB2B funciona diferente
           </h2>
           {/* IndiaMART citation */}
-          <p className="font-display italic text-offwhite/50 text-base max-w-xl mx-auto">
-            "Modelo inspirado em marketplaces consolidados como IndiaMART — R$ 950M/ano, 8,4M fornecedores — adaptado ao mercado brasileiro."
+          <p className="font-sans text-offwhite/65 text-sm max-w-xl mx-auto leading-relaxed">
+            Modelo inspirado em marketplaces consolidados como IndiaMART — R$ 950M/ano, 8,4M fornecedores — adaptado ao mercado brasileiro.
           </p>
         </div>
 

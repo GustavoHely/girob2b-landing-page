@@ -51,7 +51,7 @@ export function PricingSection() {
       <div className="max-w-container mx-auto px-6">
         {/* Heading block */}
         <div className="text-center mb-12">
-          <p className="font-display italic text-gold-burnt text-base mb-3">Investimento transparente</p>
+          <p className="font-sans font-bold uppercase tracking-widest text-gold-burnt text-xs mb-3">Investimento transparente</p>
           <h2 className="font-sans font-black text-3xl md:text-4xl text-graphite mb-4">
             Planos para fornecedores
           </h2>

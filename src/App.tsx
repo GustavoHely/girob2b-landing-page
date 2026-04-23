@@ -5,6 +5,7 @@ import { PainPoints } from '@/components/sections/PainPoints';
 import { HowItWorksV2 } from '@/components/sections/HowItWorksV2';
 import { PricingSection } from '@/components/sections/PricingSection';
 import { DifferentiatorsV2 } from '@/components/sections/DifferentiatorsV2';
+import { BackedBy } from '@/components/sections/BackedBy';
 import { TeamV2 } from '@/components/sections/TeamV2';
 import { FAQV2 } from '@/components/sections/FAQV2';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -25,6 +26,7 @@ function App() {
       <HowItWorksV2 />
       <PricingSection />
       <DifferentiatorsV2 />
+      <BackedBy />
       <TeamV2 />
       <FAQV2 />
       <FinalCTA />

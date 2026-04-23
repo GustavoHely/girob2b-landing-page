@@ -30,7 +30,7 @@ export function PricingCard({ tier, billing, onCtaClick }: Props) {
         <h3 className="font-sans font-bold text-xl text-offwhite mb-2">{tier.name}</h3>
 
         <div className="mb-6">
-          <p className="font-display italic text-2xl text-gold-soft leading-tight">Sob consulta</p>
+          <p className="font-sans font-bold text-2xl text-gold-soft leading-tight">Sob consulta</p>
           <p className="text-xs text-offwhite/40 mt-1 tracking-wide uppercase">Pricing personalizado</p>
         </div>
 
@@ -81,8 +81,8 @@ export function PricingCard({ tier, billing, onCtaClick }: Props) {
             borderRadius: '0 0 8px 8px',
           }}
         >
-          <span className="font-display italic text-sm text-graphite whitespace-nowrap">
-            — Mais popular —
+          <span className="font-sans font-bold uppercase tracking-wider text-xs text-graphite whitespace-nowrap">
+            Mais popular
           </span>
         </div>
 

@@ -1,6 +1,4 @@
 @import './styles/tokens.css';
-@import '@fontsource/instrument-serif/400.css';
-@import '@fontsource/instrument-serif/400-italic.css';
 @import 'tailwindcss';
 
 @font-face {
@@ -36,9 +34,8 @@
   /* Alias pra componentes legados que usam brand-accent */
   --color-brand-accent: #C08A2E;
 
-  /* Tipografia — DM Sans (body/UI) + Instrument Serif (display/italic) */
+  /* Tipografia — DM Sans pra todo o ecossistema (body, UI, headlines, eyebrows uppercase tracking) */
   --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-display: 'Instrument Serif', Georgia, serif;
 }
 
 /* Utility global: max-width do container principal (1200px) */
@@ -46,9 +43,18 @@
   max-width: 1200px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family-sans);
   color: var(--color-graphite);
   background: var(--color-off-white);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Header fixed é 64px; offset ancoras pra elas nao sumirem embaixo do header */
+section[id] {
+  scroll-margin-top: 80px;
 }

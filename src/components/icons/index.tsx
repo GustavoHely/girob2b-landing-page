@@ -124,3 +124,27 @@ export function IconX({ className, size = 24, strokeWidth = 1.5 }: IconProps) {
     </svg>
   );
 }
+
+/** YouTube logo — filled pill + play triangle. Excecao ao padrao stroke (marca oficial). */
+export function IconYouTube({ className, size = 24 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path
+        d="M21.582 7.186a2.506 2.506 0 0 0-1.768-1.768C18.254 5 12 5 12 5s-6.254 0-7.814.418A2.506 2.506 0 0 0 2.418 7.186C2 8.746 2 12 2 12s0 3.254.418 4.814a2.506 2.506 0 0 0 1.768 1.768C5.746 19 12 19 12 19s6.254 0 7.814-.418a2.506 2.506 0 0 0 1.768-1.768C22 15.254 22 12 22 12s0-3.254-.418-4.814z"
+        fill="currentColor"
+      />
+      <path d="M10 15.464V8.536L16 12l-6 3.464z" fill="#F4F1EA" />
+    </svg>
+  );
+}
+
+/** Instagram logo — rounded square + ring + dot. Excecao ao padrao stroke (marca oficial). */
+export function IconInstagram({ className, size = 24, strokeWidth = 1.8 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" strokeWidth={strokeWidth} />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth={strokeWidth} />
+      <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
+    </svg>
+  );
+}
