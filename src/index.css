@@ -1,45 +1,60 @@
-@import "tailwindcss/theme";
+@import './styles/tokens.css';
+@import 'tailwindcss';
 
-@theme {
-  --color-brand-accent: #12c768;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/src/fonts/DMSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
-@source "./index.html";
-@source "./src/**/*.{js,ts,jsx,tsx}";
+@theme {
+  /* Paleta GiroB2B v3 — editorial B2B brasileiro refinado */
+  --color-teal-deep: #0A5C5C;
+  --color-teal-mid: #166666;
+  --color-teal-light: #2A7A7A;
+  --color-gold-burnt: #C08A2E;
+  --color-gold-soft: #D4A04A;
+  --color-offwhite: #F4F1EA;
+  --color-graphite: #1A1F1F;
+  --color-graphite-soft: #3A4040;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  /* Alias pra componentes legados que usam brand-accent */
+  --color-brand-accent: #C08A2E;
+
+  /* Tipografia — DM Sans pra todo o ecossistema (body, UI, headlines, eyebrows uppercase tracking) */
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Utility global: max-width do container principal (1200px) */
+.max-w-container {
+  max-width: 1200px;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-:root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #f7fbf8;
-  color: #173428;
-}
-
 body {
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  background: linear-gradient(180deg, #f9fcfa 0%, #f3f8f4 100%);
-  color: #173428;
+  font-family: var(--font-family-sans);
+  color: var(--color-graphite);
+  background: var(--color-off-white);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #e7f0ea;
-}
-::-webkit-scrollbar-thumb {
-  background: #a8bfaf;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #89a492;
+/* Header fixed é 64px; offset ancoras pra elas nao sumirem embaixo do header */
+section[id] {
+  scroll-margin-top: 80px;
 }

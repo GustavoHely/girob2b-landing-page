@@ -59,7 +59,7 @@
 .navLink {
   padding: 0.45rem 0.75rem;
   border-radius: 0.5rem;
-  color: #486256;
+  color: #1A1F1F;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
@@ -69,13 +69,13 @@
 }
 
 .navLink:hover {
-  color: #0b7a44;
-  background: rgba(18, 199, 104, 0.09);
+  color: #0A5C5C;
+  background: rgba(10, 92, 92, 0.08);
 }
 
 .navLinkActive {
-  color: #0b7a44;
-  background: rgba(18, 199, 104, 0.12);
+  color: #0A5C5C;
+  background: rgba(10, 92, 92, 0.12);
 }
 
 .navCtas {
@@ -85,24 +85,28 @@
   flex-shrink: 0;
 }
 
+/* Ghost button — preserva o CTA Gold do Hero como unico ponto focal dourado */
 .navCta {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(135deg, #12c768 0%, #0b9d52 100%);
-  color: #ffffff;
+  background: transparent;
+  color: #0A5C5C;
+  border: 1px solid rgba(10, 92, 92, 0.35);
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  transition: filter 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
   white-space: nowrap;
 }
 
 .navCta:hover {
-  filter: brightness(1.08);
+  background: rgba(10, 92, 92, 0.08);
+  border-color: rgba(10, 92, 92, 0.6);
+  color: #0A5C5C;
 }
 
 .navCtaSecondary {
@@ -110,8 +114,8 @@
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  border: 1px solid rgba(21, 62, 45, 0.14);
-  color: #234638;
+  border: 1px solid rgba(26, 31, 31, 0.14);
+  color: #1A1F1F;
   background: rgba(255, 255, 255, 0.72);
   text-decoration: none;
   font-size: 0.75rem;
