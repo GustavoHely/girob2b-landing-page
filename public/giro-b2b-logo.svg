@@ -1,9 +1,0 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GiroB2B">
-  <circle cx="256" cy="256" r="198" stroke="#2F3138" stroke-width="24" fill="none"/>
-  <path d="M334 84C389 111 427 166 446 226" stroke="#10B44E" stroke-width="24" stroke-linecap="round" fill="none"/>
-  <path d="M446 286C427 346 389 401 334 428" stroke="#10B44E" stroke-width="24" stroke-linecap="round" fill="none"/>
-  <path d="M346 69L296 99L357 109L346 69Z" fill="#10B44E"/>
-  <path d="M233 446L286 444L244 398L233 446Z" fill="#2F3138"/>
-  <text x="256" y="236" text-anchor="middle" fill="#2F3138" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="120">Giro</text>
-  <text x="256" y="348" text-anchor="middle" fill="#10B44E" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="122">B2B</text>
-</svg>
